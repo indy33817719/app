@@ -1,0 +1,43 @@
+<header class="masthead" style="background-image: url('/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>Irikawa's Blog</h1>
+          <span class="subheading">駆け出しエンジニアの備忘録</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <% @articles.each do |article| %>
+        <%= link_to article do %>
+          <div class="post-preview">
+
+            <h2 class="post-title">
+              <%= article.title %>
+            </h2>
+            <h3 class="post-subtitle">
+              <%= article.subtitle %>
+            </h3>
+            <p class="post-meta">Posted by
+              <%= link_to 't.irikawa', root_path %>
+              <%= article.created_at.strftime("%Y年%m月%d日") %>
+            </p>
+
+          </div>
+        <% end %>
+      <% end %>
+      <hr>
+      <!-- Pager -->
+      <div class="clearfix">
+        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
