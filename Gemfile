@@ -65,4 +65,6 @@ gem 'bootstrap','~> 4.3.1'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'font-awesome-rails'
+gem 'devise'
+gem 'high_voltage'
 

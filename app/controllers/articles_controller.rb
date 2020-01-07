@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      redirect_to @article, notice: '投稿に成功しました'
+      redirect_to @article, notice: '作成できました'
     else
       render :new, alert: '作成できませんでした'
     end
@@ -33,8 +33,9 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    @article.destroy
     if @article.destroy
-      redirect_to root_path, notice: '削除に成功しました'
+      redirect_to root_path, notice: '削除できました'
     else
       redirect_to root_path, alert: '削除できませんでした'
 
@@ -45,5 +46,9 @@ class ArticlesController < ApplicationController
 
   def find_article
     @article = Article.find(params[:id])
+  end
+
+  def article_params
+    params.require(:article).permit(:title, :subtitle, :body)
   end
 end

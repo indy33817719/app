@@ -1,2 +1,25 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<header class="masthead" style="background-image: url('/images/writing-1209121_1280.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1 class="text-center">
+            Create Post
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <%= render 'form', article: @article, locals:{btn_name:'Create'} %>
+      </div>
+    </div>
+  </div>
+</article>
+
