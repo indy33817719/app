@@ -424,6 +424,9 @@ input[type="password"] {
     color: white;
     text-align: center;
     font-family: 'Lora', 'Times New Roman', serif;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
 }
 
 .notice {

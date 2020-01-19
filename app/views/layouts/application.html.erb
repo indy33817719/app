@@ -9,22 +9,11 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 </head>
+
 <body>
 <!-- Navigation -->
 
   <%= render 'layouts/header' %>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg">
-        <div class="notifications">
-          <% flash.each do |key,value| %>
-            <%= content_tag(:div, value, class: key) %>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
 
 <%= yield %>
 
@@ -47,5 +36,12 @@
     </div>
   </footer>
 
+  <div class="notifications">
+    <% flash.each do |key,value| %>
+      <%= content_tag(:div, value, class: key) %>
+    <% end %>
+  </div>
+
 </body>
+
 </html>

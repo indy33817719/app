@@ -22,26 +22,26 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
-      redirect_to @article, notice: '作成できました'
+      redirect_to @article, notice: 'Post completed!'
     else
-      render :new, alert: '作成できませんでした'
+      render :new, alert: 'Post failed..'
     end
   end
 
   def update
     if @article.update(article_params)
-      redirect_to @article, notice: '更新できました'
+      redirect_to @article, notice: 'Update completed!'
     else
-      render :edit, alert: '更新できませんでした'
+      render :edit, alert: 'Update failed..'
     end
   end
 
   def destroy
     @article.destroy
     if @article.destroy
-      redirect_to root_path, notice: '削除できました'
+      redirect_to root_path, notice: 'Delete completed!'
     else
-      redirect_to root_path, alert: '削除できませんでした'
+      redirect_to root_path, alert: 'Delete failed..'
 
     end
   end
