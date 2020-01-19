@@ -35,10 +35,10 @@
       <% end %>
       <hr>
 
-
       <!-- Pager -->
-      <div class="clearfix">
-        <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+<!--      <div class="clearfix">-->
+        <%= paginate @articles %>
+        <%#= link_to_next_page @articles,'Older Posts',class:"btn btn-primary float-right" %>
       </div>
     </div>
   </div>

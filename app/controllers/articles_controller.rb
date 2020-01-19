@@ -1,7 +1,10 @@
 class ArticlesController < ApplicationController
   before_action :find_article, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+
   def index
     @articles = Article.order(created_at: :desc)
+    @articles = Article.page(params[:page]).per(8)
   end
 
   def show
@@ -17,6 +20,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+
     if @article.save
       redirect_to @article, notice: '作成できました'
     else

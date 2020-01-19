@@ -420,5 +420,20 @@ input[type="password"] {
     height: 40px;
 }
 
+.notifications {
+    color: white;
+    text-align: center;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.notice {
+    background-color: cornflowerblue;
+}
+
+.alert {
+    background-color: orange;
+}
+
+
 
 
