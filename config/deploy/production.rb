@@ -1,5 +1,5 @@
 server '3.12.1.0', user: 'irikawa', roles: %w{app db web} 
-set :ssh_options, keys: '~/.ssh/first_aws_rsa' 
+set :ssh_options, keys: '~/.ssh/tiblog_key_rsa' 
 
 # server-based syntax
 # ======================
