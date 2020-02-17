@@ -53,7 +53,6 @@
     <orderEntry type="library" scope="PROVIDED" name="capistrano-bundler (v1.6.0, rbenv: 2.5.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rails (v1.4.0, rbenv: 2.5.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rbenv (v2.1.6, rbenv: 2.5.0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="capistrano3-puma (v3.1.1, rbenv: 2.5.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.30.0, rbenv: 2.5.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v3.0.0, rbenv: 2.5.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chromedriver-helper (v2.1.1, rbenv: 2.5.0) [gem]" level="application" />

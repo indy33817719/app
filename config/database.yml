@@ -13,8 +13,8 @@ default: &default
   database: blog_development
   pool: 5
   username: root
-  password:
-  socket: /var/lib/mysql/mysql.sock
+  password: <%= ENV['DB_PASSWORD'] %>
+  socket: /tmp/mysql.sock
 
 
 development:
