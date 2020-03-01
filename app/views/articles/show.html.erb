@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <p>
-          <%= @article.body %>
+          <%= simple_format @article.body %>
         </p>
         <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success' %>
         <%= link_to 'Delete', article_path(@article), data: {confirm: '削除してもよろしいですか？'}, method: :delete, class: 'btn btn-danger' %>
